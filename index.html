@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campus Lost & Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <button class="icon-button" aria-label="Menu">
+      ☰
+    </button>
+
+    <div class="topbar-title">
+      Campus Lost &amp; Found
+    </div>
+
+    <div class="topbar-actions">
+      <button class="primary-button">
+        + Post
+      </button>
+      <button class="icon-button circle" aria-label="Profile">
+        👤
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="page">
+    <!-- Filter Lost / Found -->
+    <section class="filter-row">
+      <button class="chip active" data-filter="lost">Lost</button>
+      <button class="chip" data-filter="found">Found</button>
+    </section>
+
+    <!-- Cards grid -->
+    <section class="card-grid" id="itemGrid">
+      <!-- ตัวอย่างการ์ด (คลิกแล้วไปหน้า detail) -->
+      <a href="post-detail.html" class="item-card" data-type="lost">
+        <div class="item-image placeholder"></div>
+        <div class="item-content">
+          <div class="item-badge lost">Lost</div>
+          <h3 class="item-title">iPad Air (Blue Case)</h3>
+          <p class="item-meta">Last seen at Library • 2 hrs ago</p>
+        </div>
+      </a>
+
+      <a href="post-detail.html" class="item-card" data-type="found">
+        <div class="item-image placeholder"></div>
+        <div class="item-content">
+          <div class="item-badge found">Found</div>
+          <h3 class="item-title">Student ID Card</h3>
+          <p class="item-meta">Found at Canteen • 30 mins ago</p>
+        </div>
+      </a>
+
+      <a href="post-detail.html" class="item-card" data-type="lost">
+        <div class="item-image placeholder"></div>
+        <div class="item-content">
+          <div class="item-badge lost">Lost</div>
+          <h3 class="item-title">Black Wallet</h3>
+          <p class="item-meta">Lost around Gym • Yesterday</p>
+        </div>
+      </a>
+
+      <a href="post-detail.html" class="item-card" data-type="found">
+        <div class="item-image placeholder"></div>
+        <div class="item-content">
+          <div class="item-badge found">Found</div>
+          <h3 class="item-title">AirPods Case</h3>
+          <p class="item-meta">Found in Building B • 1 hr ago</p>
+        </div>
+      </a>
+
+      <!-- เพิ่มการ์ดอื่น ๆ ได้ตามต้องการ -->
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
